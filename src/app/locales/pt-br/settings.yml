@@ -13,7 +13,7 @@ menu:
     gui: GUI
     streaming: Transmitindo
     player: Tocador de vídeo
-    streams: Streams
+    streams: Transmissões
     chat: Chat
     languages: Idiomas
     hotkeys: Atalhos
@@ -27,9 +27,9 @@ main:
         labels:
             auto: "Sistema ({label})"
     advanced:
-        title: Preferências e capacidades
-        description: Esconder Preferências e capacidades.<br>Não é somente aplicado ao menu das preferências.
-        checkbox: Ativar Preferências e capacidades avançadas
+        title: Preferências e recursos
+        description: Esconder Preferências e recursos.<br>Não é somente aplicado ao menu das preferências.
+        checkbox: Ativar Preferências e recursos avançados
     homepage:
         title: Página principal
         description: Carregar menu primeiro ou quando clicar no logo.
@@ -43,7 +43,7 @@ main:
     scrolling:
         title: Navegação
         description: Permitir a navegação (scrolling) suave.
-        checkbox: Permitir naveção suave
+        checkbox: Permitir navegação suave
     externalcommands:
         title: Ações por linha de comando
         description: Escutar os sinais enviados por outras aplicações.
@@ -61,7 +61,7 @@ gui:
         title: Minimizar a interface (GUI)
 # FIXME
 #        description: When a stream gets launched.
-#        description: Quando o tocador de vídeo abrir.
+#        description: Quando a transmissão começar.
         values:
             noop: Não fazer nada
             minimize: Minimizar
@@ -79,7 +79,7 @@ gui:
         checkbox: Esconder botões
     minimizetotray:
         title: Botão minimizar
-        description: Comportamento do clicque.
+        description: Comportamento do clique.
         checkbox: Minimizar para área de notificação
     badgelabel:
         title: Distintivo da aplicação
@@ -126,15 +126,15 @@ streaming:
                 label: HLS (atravessado)
                 description: Deixa o próprio tocador de vídeo baixar e carregar a transmissão.
     low-latency:
-        title: Tranmissão de baixa latência
+        title: Transmissão de baixa latência
         description: Reduz o atraso da transmissão para os canais que transmitem em modo de baixa latência.
         notes: Atenção ao ativar esta opção pois irá configurar o valor do live-edge para 2 (se for alto), o que pode causar uma bufferização para transmissões regulares. Para alcançar a menor latência possível, serão necessários ajustes nas configurações de cache ou buffer dos tocadores de vídeo.
         checkbox: Ativar transmissão de baixa latência
     hls-live-edge:
-        title: HLS live edge
+        title: HLS pacotes baixados por vez
         description: Diminuir o valor irá diminuir a latência da transmissão, mas podem causar bufferização. Dependendo da configuração do tocador, podem haver outros níveis de bufferização.
     stream-segment-threads:
-        title: Stream segment threads
+        title: Paralelismo de download de pacotes na transmissão
         description: Número de threads usados para baixar e processar os segmentos de transmissão.
     player-no-close:
         title: Manter a janela do tocador de vídeo
@@ -175,7 +175,7 @@ player:
         placeholder: Adicionar parâmetros personalizados
         substitutions:
             channel: Nome do canal
-            status: Texto de status do canal
+            status: Texto de estado do canal
             game: Nome do jogo que está sendo jogado
             delay: Atraso adicional para a transmissão (em segundos)
             created: Online desde
@@ -249,7 +249,7 @@ player:
 streams:
     quality:
         title: Qualidade
-        description: Escolha a qualidade padrão da tranmissão.
+        description: Escolha a qualidade padrão da transmissão.
     qualitypresets:
         title: Pré definição de qualidade
         description: Define a qualidade por seleção ou por uso explícito de rótulos de qualidade.
@@ -412,8 +412,8 @@ chat:
                         title: Caminho da aplicação
                         description: Define o caminho para o executável.
                     args:
-                        title: Parâmetros da aplicaçãoApplication parameters
-                        description: Set application parameters.
+                        title: Parâmetros da aplicação
+                        description: Define os parâmetros da aplicação.
                     url:
                         title: URL do chat
                         description: Qual URL utilizar para o chat na Twitch.
@@ -433,11 +433,9 @@ languages:
         values:
             fade:
                 text: Esconder transmissões
-                # FIXME
-                description: Mostrar todas as transmissões e esconder aquelas que não condizem com o idioma selecionado.
+                description: Mostrar todas as transmissões e esmaecer as que não condizem com o idioma selecionado.
             filter:
                 text: Mostrar transmissões
-                # FIXME
                 description: Mostrar somente as transmissões que condizem com o idioma selecionado.
     languages:
         title: Idiomas
@@ -457,8 +455,8 @@ hotkeys:
             homepage: Ir para Página Principal
             routeFeatured: Ir para página dos Canais em Destaque
             routeGames: Ir para o menu de Jogos
-            routeStreams: Ir para o menu de Streams
-            routeUserFollowedStreams: Ir para o menu de Streams seguidos
+            routeStreams: Ir para o menu de Transmissões
+            routeUserFollowedStreams: Ir para o menu de Transmissões seguidas
             routeUserFollowedChannels: Ir para o menu de Canais seguidos
             routeUserAuth: Ir para o menu do Usuário
             routeWatching: Ir para o menu de Assistindo
