@@ -1,6 +1,6 @@
 error:
     header: Erro
-    text: Houve um erro enquanto tentava mostrar esta página.
+    text: Houve um erro ao tentar mostrar esta página.
 about:
     about:
         header: Sobre
@@ -30,10 +30,10 @@ games:
     header: Jogos mais vistos
     empty: A lista de jogos mais vistos está vazia.
 game:
-    empty: A lista de streams deste jogo está vazia.
+    empty: A lista de transmissões deste jogo está vazia.
 streams:
-    header: Streams mais vistos
-    empty: A lista de streams mais vistos está vazia.
+    header: Transmissões mais vistas
+    empty: A lista de transmissões mais vistas está vazia.
 channel:
     menu:
         details: Detalhes
@@ -63,12 +63,12 @@ channel:
                 }
         vodcast:
             title: Vodcast
-            data: O Stream é um Vodcast
+            data: A transmissão é um Vodcast
     teams:
         empty: A lista de times está vazia.
     settings:
         stream:
-            header: Stream
+            header: Transmissão
             quality:
                 title: Qualidade
                 description: Definir a qualidade da transmissão.
@@ -117,7 +117,7 @@ user:
             copy: Copiar para área de cópia
             hint:
                 first: "Esta chave permite acesso a sua conta Twitch.tv com estas permissões:"
-                second: Faça login novamente com o seu password para invalidar esta ação.
+                second: Faça login novamente com sua senha para invalidar esta ação.
     auth:
         abort: Abortar
         sign-in: Acessar
@@ -129,18 +129,18 @@ user:
                 second: "Certifique que as seguintes permissões estão liberadas:"
         fail: Falha de autenticação. Tente novamente por favor.
     followedStreams:
-        header: Streams seguidos
+        header: Transmissões seguidas
         empty:
-            text: A lista de streams seguidos está vazia.
-            streams: Assista às principais streams
+            text: A lista de transmissões seguidas está vazia.
+            streams: Assista às principais transmissões
     followedChannels:
         header: Canais seguidos
         empty: A lista de canais seguidos está vazia.
 search:
     header:
-        all: Todas os resultados buscados
-        games: "Resultado de jogos buscados: "
-        channels: "Resultado de canais buscados: "
+        all: Todas os resultados da busca
+        games: "Resultado na busca de jogos: "
+        channels: "Resultado na busca de canais: "
     subheader:
         games: Jogos
         channels: Canais
@@ -149,9 +149,9 @@ watching:
     header: Você está assistindo
     buttons:
         open: Abrir caixa de diálogo
-        close: Fechar Stream
+        close: Fechar Transmissão
     empty:
-        header: Todas as streams foram fechadas
+        header: Todas as transmissões foram fechadas
         next: O que fazer a seguir?
-        streams: Assista às principais streams
-        followed: Assistir as streams que você segue
+        streams: Assista às principais transmissões
+        followed: Assistir as transmissões que você segue
